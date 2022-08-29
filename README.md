@@ -9,7 +9,7 @@ An implement of the ACM MM 22 paper: Recurrent Meta-Learning against Generalized
 Unzip the preprocessed dataset avazu.7z, bookcrossing.7z, ml-1m.7z to ./data/avazu, ./data/bookcrossing, ./data/ml-1m.
 
 ## Training
-1. Modify configs in `config.py` (copy the parameters from `config [dataset] [subset].py`)
+1. Modify the config file `config.py` (copy the parameters from `config [dataset] [subset].py`)
 2. Run the script:
 ```shell
 CUDA_VISIBLE_DEVICES=0  python main.py --model our --dataset ml-1m --start 0 --end 1
@@ -17,7 +17,7 @@ CUDA_VISIBLE_DEVICES=0  python main.py --model our --dataset ml-1m --start 0 --e
 Note: `--start 0 --end 1` for WC subset and  `--start 1 --end 2` for CW subset.
 
 ## Evaluation
-1. Modify configs in `config.py` (copy the parameters from `config [dataset] [subset].py`)
+1. Modify the config file `config.py` (copy the parameters from `config [dataset] [subset].py`)
 2. Run the script:
 ```shell
 CUDA_VISIBLE_DEVICES=0  python main_test.py --model our --dataset ml-1m --start 0 --end 1
